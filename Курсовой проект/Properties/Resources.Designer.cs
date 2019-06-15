@@ -113,6 +113,16 @@ namespace Курсовой_проект.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AndGif {
+            get {
+                object obj = ResourceManager.GetObject("AndGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ButtonOff {
             get {
                 object obj = ResourceManager.GetObject("ButtonOff", resourceCulture);
@@ -191,6 +201,16 @@ namespace Курсовой_проект.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        internal static System.Drawing.Icon iconGame {
+            get {
+                object obj = ResourceManager.GetObject("iconGame", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Kitten {
@@ -253,9 +273,79 @@ namespace Курсовой_проект.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Line_black_lvl5 {
+            get {
+                object obj = ResourceManager.GetObject("Line_black_lvl5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Line_green {
             get {
                 object obj = ResourceManager.GetObject("Line_green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Line_green_lvl5 {
+            get {
+                object obj = ResourceManager.GetObject("Line_green_lvl5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Line_lvl66_black {
+            get {
+                object obj = ResourceManager.GetObject("Line_lvl66_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Line_lvl662_black {
+            get {
+                object obj = ResourceManager.GetObject("Line_lvl662_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Line_lvl77_black {
+            get {
+                object obj = ResourceManager.GetObject("Line_lvl77_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Line_Vertical_black {
+            get {
+                object obj = ResourceManager.GetObject("Line_Vertical_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Line_Vertical_green {
+            get {
+                object obj = ResourceManager.GetObject("Line_Vertical_green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,6 +533,26 @@ namespace Курсовой_проект.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Not {
+            get {
+                object obj = ResourceManager.GetObject("Not", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NotGif {
+            get {
+                object obj = ResourceManager.GetObject("NotGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NotGreen {
             get {
                 object obj = ResourceManager.GetObject("NotGreen", resourceCulture);
@@ -486,6 +596,16 @@ namespace Курсовой_проект.Properties {
         internal static System.Drawing.Bitmap Or {
             get {
                 object obj = ResourceManager.GetObject("Or", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OrGif {
+            get {
+                object obj = ResourceManager.GetObject("OrGif", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -627,6 +747,76 @@ namespace Курсовой_проект.Properties {
             get {
                 object obj = ResourceManager.GetObject("грусть", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap и1 {
+            get {
+                object obj = ResourceManager.GetObject("и1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap и2 {
+            get {
+                object obj = ResourceManager.GetObject("и2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap и3 {
+            get {
+                object obj = ResourceManager.GetObject("и3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap или1 {
+            get {
+                object obj = ResourceManager.GetObject("или1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap или2 {
+            get {
+                object obj = ResourceManager.GetObject("или2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap или3 {
+            get {
+                object obj = ResourceManager.GetObject("или3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap отрицание {
+            get {
+                object obj = ResourceManager.GetObject("отрицание", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

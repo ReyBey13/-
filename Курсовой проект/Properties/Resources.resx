@@ -289,4 +289,61 @@
   <data name="LineLvl557_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LineLvl557_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AndGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AndGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NotGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NotGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OrGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OrGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconGame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconGame.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Line_black_lvl5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Line_black_lvl5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Line_green_lvl5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Line_green_lvl5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Line_Vertical_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Line_Vertical_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Line_Vertical_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Line_Vertical_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Line_lvl662_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Line_lvl662_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Line_lvl66_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Line_lvl66_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Line_lvl77_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Line_lvl77_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Not" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Not.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="и1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\и1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="и2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\и2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="и3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\и3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="или1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\или1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="или2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\или2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="или3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\или3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="отрицание" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\отрицание.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -144,6 +144,7 @@
             this.Name = "FormLogic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Логика";
+            this.Load += new System.EventHandler(this.FormLogic_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCatSleep)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

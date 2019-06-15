@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Курсовой_проект
 {
     public partial class FormResult : Form
     {
-        public int Res, HCRes,m,s;
+        public int Res, HCRes, m, s;
         
         public FormResult()
         {
@@ -21,9 +22,21 @@ namespace Курсовой_проект
 
         private void buttonMenu_Click(object sender, EventArgs e)
         {
-            FormLogic frm2 = new FormLogic();
-            frm2.Show();
-            this.Hide();
+            ClassSaveHist hist = new ClassSaveHist();
+            if (Res == 0 || Res == 2)
+            {
+                Hide();
+                hist.ShowForm();
+            }
+            else
+            {
+                StreamWriter streamWriter = new StreamWriter("records.txt", true);
+                streamWriter.WriteLine(ClassSaveHist.Name + ":" + m + " мин " + s + " сек " + ":" + HCRes + ";");
+                streamWriter.Close();
+                FormRecords form = new FormRecords();
+                form.Show();
+                Hide();
+            }
         }
 
         private void FormResult_Load(object sender, EventArgs e)
@@ -37,29 +50,29 @@ namespace Курсовой_проект
             }
             if (Res==1)
             {
-                labelResText4.Text = "Молодец";
+                labelResText1.Text = "Молодец";
                 if (m < 10)
                 {
                     if (s < 10)
                     {
-                        labelResText5.Text = "Пройденное время: 0" + m + ":0" + s;
+                        labelResText2.Text = "Затраченное время: 0" + m + ":0" + s;
                     }
-                    else { labelResText5.Text = "Пройденное время: 0" + m + ":" + s; }
+                    else { labelResText2.Text = "Затраченное время: 0" + m + ":" + s; }
                     }
                                   
                 else
                 {
-                    labelResText5.Text = "Пройденное время: " + m + ":" + s;
+                    labelResText2.Text = "Затраченное время: " + m + ":" + s;
                 }
                 
-                labelResText6.Text = "Количество сохраненных сердечек";
+                labelResText3.Text = "Количество сохраненных сердечек";
                 HeartCat1(HCRes);
             }
-            if (Res == 3)
+            if (Res == 2)
             {
-                labelResText10.Text = "Ура!";
-                labelResText8.Text = "Ты прошел тренировку!";
-                labelResText9.Text = "Теперь ты готов к работе!";
+                labelResText1.Text = "Ура!";
+                labelResText2.Text = "Ты прошел тренировку!";
+                labelResText3.Text = "Теперь ты готов к работе!";
                 pictureBox1.Image = Properties.Resources.HappyCat;
             }
         }

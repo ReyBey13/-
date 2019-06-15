@@ -12,6 +12,10 @@ namespace Курсовой_проект
 {
     public partial class FormRegulations : Form
     {
+             
+        List<GroupBox> listP = new List<GroupBox>();
+        int i;
+
         public FormRegulations()
         {
             InitializeComponent();
@@ -28,6 +32,16 @@ namespace Курсовой_проект
         }
 
         private void buttonForward_Click(object sender, EventArgs e)
+        {
+            for (i = 0; i >= 2; i++)
+            {
+                listP[i].Visible=false;
+                i++;
+                listP[i].Visible = true;
+            }            
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

@@ -43,5 +43,10 @@ namespace Курсовой_проект
             FormRecords frm5 = new FormRecords();
             frm5.Show();
         }
+
+        private void FormLogic_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

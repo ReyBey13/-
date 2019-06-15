@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassSaveHist.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,7 +158,7 @@
     <None Include="Resources\Hearts2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Hearts3.png" />
+    <DesignDataWithDesignTimeCreatableTypes Include="Resources\Hearts3.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ReadingCat.png" />
@@ -320,6 +321,29 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LineLvl557_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AndGif.gif" />
+    <None Include="Resources\отрицание.png" />
+    <None Include="Resources\или3.png" />
+    <None Include="Resources\или2.png" />
+    <None Include="Resources\или1.png" />
+    <None Include="Resources\и3.png" />
+    <None Include="Resources\и2.png" />
+    <None Include="Resources\и1.png" />
+    <None Include="Resources\iconGame.ico" />
+    <None Include="Resources\Line_black_lvl5.png" />
+    <None Include="Resources\Line_green_lvl5.png" />
+    <None Include="Resources\Line_Vertical_black.png" />
+    <None Include="Resources\Line_Vertical_green.png" />
+    <None Include="Resources\Line_lvl66_black.png" />
+    <None Include="Resources\Line_lvl66_green.png" />
+    <None Include="Resources\Line_lvl662_black.png" />
+    <None Include="Resources\Line_lvl662_green.png" />
+    <None Include="Resources\Line_lvl77_black.png" />
+    <None Include="Resources\Not.png" />
+    <Content Include="Resources\NotGif.gif" />
+    <Content Include="Resources\OrGif.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
