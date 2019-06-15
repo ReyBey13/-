@@ -42,7 +42,7 @@ namespace Курсовой_проект
         public FormGame(bool type)
         {
             InitializeComponent();
-            
+
             // присваиваем переменной типа режима значение из аргумента конструктора
             // так как переменная нужна и в других функциях, а аргумент доступен только внутри конструктора
             gameType = type;
@@ -54,7 +54,7 @@ namespace Курсовой_проект
             {
                 // вызов функции инициализации всех линий, создание для них обьектов структуры ImageInfo
                 InitalizePic();
-                
+
                 // скрытие таймера и сердец
                 labelMin.Visible = false;
                 labelPoints.Visible = false;
@@ -91,7 +91,7 @@ namespace Курсовой_проект
                 buttonProv.Visible = true;
             }
         }
-    
+
         public void timerGame_Tick(object sender, EventArgs e)
         {
             if (labelSec.Enabled == true)
@@ -160,7 +160,7 @@ namespace Курсовой_проект
                               "Также напоминаю, что время работает против нас, а потому постарайся сделать всё как можно быстрее. " +
                               "Теперь у тебя есть таймер для отслеживания потраченного времени. " +
                               "Вот, теперь ты точно готов - можешь приступать.";
-                
+
                 // создание формы и метки
                 Form formInfo = new Form
                 {
@@ -169,7 +169,7 @@ namespace Курсовой_проект
                     BackgroundImage = Properties.Resources.Result,
                     BackgroundImageLayout = ImageLayout.Stretch,
                     Text = "Обрати внимание",
-                    FormBorderStyle = FormBorderStyle.FixedDialog,                    
+                    FormBorderStyle = FormBorderStyle.FixedDialog,
                     MaximizeBox = false,
                     Icon = Properties.Resources.iconGame,
                 };
@@ -182,7 +182,7 @@ namespace Курсовой_проект
                     TextAlign = ContentAlignment.MiddleCenter,
                     Font = new Font("Comic Sans MS", 10),
                     BackColor = Color.Transparent,
-                    
+
                 };
 
                 // добавление метки на панель
@@ -195,7 +195,7 @@ namespace Курсовой_проект
                 timerGame.Start();
             }
         }
-      
+
         // тик таймера тренировки
         // выполняет всю работу логических блоков и ламп
         private void TimerCheck_Tick(object sender, EventArgs e)
@@ -232,7 +232,7 @@ namespace Курсовой_проект
                         // на втором уровне уже появляется отрицание
                         // поэтому каждый тик создаем экземпляр класса отрицания, который будет менять состояния и цвета линий около него
                         // последовательно пишем в аргументы линии, подробнее о работе смотри внизу
-                        Negation neg = new Negation(picNotLvl2, picLineLvl21, picLineLvl22);
+                        Negation(picNotLvl2, picLineLvl21, picLineLvl22);
 
                         // меняем цвет и тэг котачу на основаниии входящей в него линии
                         picPuLvl2.Image = GetLamp(((ImageInfo)picLineLvl22.Tag).State);
@@ -249,7 +249,7 @@ namespace Курсовой_проект
                     {
                         // появление ИЛИ
                         // в общем-то ничего сложного, класс делает сам все, нужно только правильно указать входные-выходные линии
-                        Addition add = new Addition(picLineLvl31, picLineLvl32, picLineLvl33);
+                        Addition(picLineLvl31, picLineLvl32, picLineLvl33);
 
                         // меняем цвет и тэг котачу
                         picPuLvl3.Image = GetLamp(((ImageInfo)picLineLvl33.Tag).State);
@@ -265,7 +265,7 @@ namespace Курсовой_проект
                 case 3:
                     {
                         // блок И
-                        Multiply add = new Multiply(picLineLvl41, picLineLvl42, picLineLvl43);
+                        Multiply(picLineLvl41, picLineLvl42, picLineLvl43);
 
                         // изменение цвета и тэга котачу
                         picPuLvl4.Image = GetLamp(((ImageInfo)picLineLvl43.Tag).State);
@@ -281,11 +281,11 @@ namespace Курсовой_проект
                 case 4:
                     {
                         // опять же ничего нового, только блоков больше
-                        Negation neg1 = new Negation(picNotLvl61, picLineLvl61, picLineLvl62);
-                        Negation neg2 = new Negation(picNotLvl62, picLineLvl67, picLineLvl68);
-                        Negation neg3 = new Negation(picNotLvl63, picLineLvl65, picLineLvl66);
-                        Addition add1 = new Addition(picLineLvl62, picLineLvl63, picLineLvl64);
-                        Addition add2 = new Addition(picLineLvl64, picLineLvl66, picLineLvl67);
+                        Negation(picNotLvl61, picLineLvl61, picLineLvl62);
+                        Negation(picNotLvl62, picLineLvl67, picLineLvl68);
+                        Negation(picNotLvl63, picLineLvl65, picLineLvl66);
+                        Addition(picLineLvl62, picLineLvl63, picLineLvl64);
+                        Addition(picLineLvl64, picLineLvl66, picLineLvl67);
 
                         // котачу
                         picPuLvl6.Image = GetLamp(((ImageInfo)picLineLvl68.Tag).State);
@@ -302,8 +302,8 @@ namespace Курсовой_проект
                 case 5:
                     {
                         // начало не предвещает беды
-                        Multiply add = new Multiply(picLineLvl51, picLineLvl52, picLineLvl53);
-                        Addition addit = new Addition(picLineLvl54, picLineLvl57, picLineLvl58);
+                        Multiply(picLineLvl51, picLineLvl52, picLineLvl53);
+                        Addition(picLineLvl54, picLineLvl57, picLineLvl58);
 
                         // даров, это шляпа
                         // просто здесь нельзя пользоваться обычным классом, так как картинка другая(смотрящая вниз)
@@ -335,8 +335,8 @@ namespace Курсовой_проект
                         }
 
                         // а эти отрицания уже обычные
-                        Negation neg2 = new Negation(picNotLvl52, picLineLvl58, picLineLvl55);
-                        Negation neg3 = new Negation(picNotLvl53, picLineLvl58, picLineLvl56);
+                        Negation(picNotLvl52, picLineLvl58, picLineLvl55);
+                        Negation(picNotLvl53, picLineLvl58, picLineLvl56);
 
                         // работа со всеми котачу
                         picPuLvl51.Image = GetLamp(((ImageInfo)picLineLvl53.Tag).State);
@@ -352,7 +352,6 @@ namespace Курсовой_проект
                             buttonNext.Visible = false;
                         else
                             buttonNext.Visible = true;
-
                     }
                     break;
             }
@@ -363,7 +362,6 @@ namespace Курсовой_проект
         // функция для установки состояния у линии, передаваемой в аргумент
         private object SetState(PictureBox pic)
         {
-            MessageBox.Show(pic.Name);
             // создание экземпляра ImageInfo из тэга полученной картинки
             ImageInfo imageInfo = (ImageInfo)pic.Tag;
 
@@ -472,7 +470,7 @@ namespace Курсовой_проект
 
                 // увеличение счетчика уровней
                 CountPanels++;
-                
+
 
                 // если на последнем, идем на форму результата
                 if (CountPanels == 7)
@@ -509,23 +507,28 @@ namespace Курсовой_проект
                 case 0:
                     {
                         if (picPuLvl11.Tag.ToString() == "1") return 1;
-                    }break;
+                    }
+                    break;
                 case 1:
                     {
-                        if(picPuLvl221.Tag.ToString() == "1" && picPuLvl222.Tag.ToString() == "0") return 1;
-                    }break;
+                        if (picPuLvl221.Tag.ToString() == "1" && picPuLvl222.Tag.ToString() == "0") return 1;
+                    }
+                    break;
                 case 2:
                     {
                         if (picPuLvl331.Tag.ToString() == "1" && picPuLvl333.Tag.ToString() == "1" && picPuLvl332.Tag.ToString() == "0") return 1;
-                    }break;
+                    }
+                    break;
                 case 3:
                     {
-                        if(picPowLvl441.Tag.ToString() == "1" && picPowLvl442.Tag.ToString() == "0") return 1;
-                    }break;
+                        if (picPowLvl441.Tag.ToString() == "1" && picPowLvl442.Tag.ToString() == "0") return 1;
+                    }
+                    break;
                 case 4:
                     {
                         if (picPuLvl552.Tag.ToString() == "1" && picPuLvl553.Tag.ToString() == "1" && picPuLvl554.Tag.ToString() == "1" && picPuLvl551.Tag.ToString() == "0") return 1;
-                    }break;
+                    }
+                    break;
                 case 5:
                     {
                         if (picPowLvl661.Tag.ToString() == "0" && picPowLvl662.Tag.ToString() == "0" && picPowLvl663.Tag.ToString() == "1") return 1;
@@ -575,6 +578,7 @@ namespace Курсовой_проект
         // просто хорошая оптимизаци, хорошо изучи каждую её строчку
         // все названия дословны и переводятся по смыслу
         // функция для поиска и возврата прилежащей картинки
+        // работает только в случае нахождения искомой картинки на уровне или над известной картинкой
         private PictureBox GetLine(object sender)
         {
             // полученный аргумент(обьект) превращаем в картинку
@@ -607,7 +611,7 @@ namespace Курсовой_проект
                     Rectangle rect2 = new Rectangle(box.Location, box.Size);
 
                     // проверка, пересекается ли четырехугольник первой картинки с четырехугольником второй
-                    if (rect1.IntersectsWith(rect2))
+                    if (rect2.IntersectsWith(rect1))
                     {
                         // если пересекаются, то созданная тут картинка присваивается выходной переменной и цикл останавливается, т.к. всё нашли
                         output = box;
@@ -638,7 +642,7 @@ namespace Курсовой_проект
         // всё по порядку, абзац на уровень
         private void InitalizePic()
         {
-            picLineLvl1.Tag = new ImageInfo  { Black = Properties.Resources.Line_black, Green = Properties.Resources.Line_green, State = false };
+            picLineLvl1.Tag = new ImageInfo { Black = Properties.Resources.Line_black, Green = Properties.Resources.Line_green, State = false };
 
             picLineLvl21.Tag = new ImageInfo { Black = Properties.Resources.Line_black, Green = Properties.Resources.Line_green, State = true };
             picLineLvl22.Tag = new ImageInfo { Black = Properties.Resources.Line_black, Green = Properties.Resources.Line_green, State = false };
@@ -725,10 +729,10 @@ namespace Курсовой_проект
 
             // проверка условия
             // показываем индивидуальную справку только для первого, второго и третьего уровней
-            if(CountPanels > 0 && CountPanels <= 3)
+            if (CountPanels > 0 && CountPanels <= 3)
             {
                 // отнимаем единицу, т.к. массив картинок начинается с нуля, значит на единицу меньше нашего счетчика панелей
-                count = CountPanels-1;
+                count = CountPanels - 1;
             }
             else
             {
@@ -782,7 +786,7 @@ namespace Курсовой_проект
                 count++;
 
                 // если счетчик больше, чем количество картинок в списке
-                if(count >= listB.Count)
+                if (count >= listB.Count)
                 {
                     // обнуляем счетчик
                     count = 0;
@@ -809,28 +813,28 @@ namespace Курсовой_проект
             // отображение формы справочника
             FormSprav.Show();
         }
-    }
 
-    /// ЭТО НЕОБХОДИМО ИЗУЧИТЬ ВО ВТОРУЮ ОЧЕРЕДЬ, СРАЗУ ПОСЛЕ ИЗУЧЕНИЯ СТРУКТУРЫ ImageInfo
-    /// ЭТО НЕОБХОДИМО ИЗУЧИТЬ ВО ВТОРУЮ ОЧЕРЕДЬ, СРАЗУ ПОСЛЕ ИЗУЧЕНИЯ СТРУКТУРЫ ImageInfo
-    /// ЭТО НЕОБХОДИМО ИЗУЧИТЬ ВО ВТОРУЮ ОЧЕРЕДЬ, СРАЗУ ПОСЛЕ ИЗУЧЕНИЯ СТРУКТУРЫ ImageInfo
-    
-    // класс реализации работы блока отрицания,
-    // остальные два блока основаны на нем
-    // общая работа класса заключается в изменении состояний у линий
-    // получает входную линию, и если истина, то меняется сам на красный и изменяет входную линию на зеленую, выходную - на черную
-    // в случае, когда входная линия ложна, изменяется сам на зеленый, меняет входную линию на 
-    public class Negation
-    {
-        // конструктор класса
+        /// ЭТО НЕОБХОДИМО ИЗУЧИТЬ ВО ВТОРУЮ ОЧЕРЕДЬ, СРАЗУ ПОСЛЕ ИЗУЧЕНИЯ СТРУКТУРЫ ImageInfo
+        /// ЭТО НЕОБХОДИМО ИЗУЧИТЬ ВО ВТОРУЮ ОЧЕРЕДЬ, СРАЗУ ПОСЛЕ ИЗУЧЕНИЯ СТРУКТУРЫ ImageInfo
+        /// ЭТО НЕОБХОДИМО ИЗУЧИТЬ ВО ВТОРУЮ ОЧЕРЕДЬ, СРАЗУ ПОСЛЕ ИЗУЧЕНИЯ СТРУКТУРЫ ImageInfo
+
+        // функции реализации работы блока отрицания,
+        // остальные два блока основаны на нем
+        // общая работа заключается в изменении состояний у линий
+        // получает входную линию, и если истина, то меняется сам на красный и изменяет входную линию на зеленую, выходную - на черную
+        // в случае, когда входная линия ложна, изменяется сам на зеленый, меняет входную линию на 
+
         // имеет три аргумента: картинку(красная или зеленая), линию на вход и линию на выход
-        public Negation(PictureBox Picture, PictureBox PicLeft, PictureBox PicRight)
+
+        void Negation(PictureBox Picture, PictureBox PicLeft, PictureBox PicRight)
         {
             // создание экземпляров структуры информации о линиях, входной и выходной
             // эти структуры уже лежат в тэгах картинок, поэтому их оттуда и извлекаем
             ImageInfo imgLeftInfo = (ImageInfo)PicLeft.Tag;
             ImageInfo imgRightInfo = (ImageInfo)PicRight.Tag;
+            // переменная состояния входной линии
 
+            bool input;
             // получение состояния входной, то есть левой, линии
             // получение доступа к полям структуры прост - пишется название экземпляра и через точку - поле
             // в данном случае нам нужно поле State, хранящая истинность или ложность линии
@@ -870,23 +874,22 @@ namespace Курсовой_проект
             }
         }
 
-        // переменная состояния входной линии
-        bool input;
-    }
 
 
-    // класс для реализаци блока AND 
-    // почти полная копия предыдущего
-    // реализует обычную работу блока - проверяет две входные линии, если обе истинны - делает истиной и выходную, в ином случае делает ее ложной
-    public class Multiply
-    {
-        // конструктор получает три картинки - две входные и выходную
-        public Multiply(PictureBox PicIn1, PictureBox PicIn2, PictureBox PicOut)
+        // функция для реализаци блока AND 
+        // почти полная копия предыдущего
+        // реализует обычную работу блока - проверяет две входные линии, если обе истинны - делает истиной и выходную, в ином случае делает ее ложной
+
+        //получает три картинки - две входные и выходную
+        void Multiply(PictureBox PicIn1, PictureBox PicIn2, PictureBox PicOut)
         {
             // создание экземпляров для тэгов каждой из линий
             ImageInfo imgIn1Info = (ImageInfo)PicIn1.Tag;
             ImageInfo imgIn2Info = (ImageInfo)PicIn2.Tag;
             ImageInfo imgOutInfo = (ImageInfo)PicOut.Tag;
+
+            // переменные для записи состояний входных линий
+            bool input1, input2;
 
             // входа уже два, поэтому и переменные две
             // состояния берем из входных линий
@@ -934,24 +937,21 @@ namespace Курсовой_проект
             }
         }
 
-        // переменные для записи состояний входных линий
-        bool input1, input2;
-    }
 
+        // функция реализации блока OR
+        // теперь уж точно копия предыдущего
+        // линии три, две входные и одна выходная, проверяем, чтобы была истинна хотя бы одна из двух входных
 
-    // класс реализации блока OR
-    // теперь уж точно копия предыдущего
-    // линии три, две входные и одна выходная, проверяем, чтобы была истинна хотя бы одна из двух входных
-    public class Addition
-    {
-        // конструктор получает три линии - две входные и одну выходную
-        public Addition(PictureBox PicIn1, PictureBox PicIn2, PictureBox PicOut)
+        // получает три линии - две входные и одну выходную
+        void Addition(PictureBox PicIn1, PictureBox PicIn2, PictureBox PicOut)
         {
             // создание экземпляров для каждой из линий
             ImageInfo imgIn1Info = (ImageInfo)PicIn1.Tag;
             ImageInfo imgIn2Info = (ImageInfo)PicIn2.Tag;
             ImageInfo imgOutInfo = (ImageInfo)PicOut.Tag;
 
+            // переменные для работы состояний входных линий
+            bool input1, input2;
             // получение состояний входных линий
             input1 = imgIn1Info.State;
             input2 = imgIn2Info.State;
@@ -995,8 +995,5 @@ namespace Курсовой_проект
                 PicOut.Tag = imgOutInfo;
             }
         }
-
-        // переменные для работы состояний входных линий
-        bool input1, input2;
     }
 }

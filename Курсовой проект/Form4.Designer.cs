@@ -106,7 +106,6 @@
             this.picPowLvl51 = new System.Windows.Forms.PictureBox();
             this.picAndLvl5 = new System.Windows.Forms.PictureBox();
             this.picPuLvl51 = new System.Windows.Forms.PictureBox();
-            this.picPowLvl53 = new System.Windows.Forms.PictureBox();
             this.picLineLvl54 = new System.Windows.Forms.PictureBox();
             this.picLineLvl57 = new System.Windows.Forms.PictureBox();
             this.picLineLvl58 = new System.Windows.Forms.PictureBox();
@@ -242,6 +241,7 @@
             this.picLineLvl778 = new System.Windows.Forms.PictureBox();
             this.picLineLvl776 = new System.Windows.Forms.PictureBox();
             this.picLineLvl775 = new System.Windows.Forms.PictureBox();
+            this.picPowLvl53 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHearts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat2)).BeginInit();
@@ -305,7 +305,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picPowLvl51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAndLvl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPuLvl51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPowLvl53)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLineLvl54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLineLvl57)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLineLvl58)).BeginInit();
@@ -432,6 +431,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLineLvl778)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLineLvl776)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLineLvl775)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPowLvl53)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxHearts
@@ -1105,6 +1105,8 @@
             // panelLvl5
             // 
             this.panelLvl5.BackColor = System.Drawing.Color.Transparent;
+            this.panelLvl5.Controls.Add(this.picLineLvl52);
+            this.panelLvl5.Controls.Add(this.picPowLvl52);
             this.panelLvl5.Controls.Add(this.picOrLvl5);
             this.panelLvl5.Controls.Add(this.picNotLvl51);
             this.panelLvl5.Controls.Add(this.picLineLvl53);
@@ -1114,19 +1116,17 @@
             this.panelLvl5.Controls.Add(this.picNotLvl53);
             this.panelLvl5.Controls.Add(this.picNotLvl52);
             this.panelLvl5.Controls.Add(this.picPuLvl52);
-            this.panelLvl5.Controls.Add(this.picLineLvl52);
-            this.panelLvl5.Controls.Add(this.picPowLvl52);
             this.panelLvl5.Controls.Add(this.picLineLvl51);
             this.panelLvl5.Controls.Add(this.picPowLvl51);
             this.panelLvl5.Controls.Add(this.picAndLvl5);
             this.panelLvl5.Controls.Add(this.picPuLvl51);
-            this.panelLvl5.Controls.Add(this.picPowLvl53);
             this.panelLvl5.Controls.Add(this.picLineLvl54);
-            this.panelLvl5.Controls.Add(this.picLineLvl57);
             this.panelLvl5.Controls.Add(this.picLineLvl58);
-            this.panelLvl5.Location = new System.Drawing.Point(439, 545);
+            this.panelLvl5.Controls.Add(this.picLineLvl57);
+            this.panelLvl5.Controls.Add(this.picPowLvl53);
+            this.panelLvl5.Location = new System.Drawing.Point(276, 31);
             this.panelLvl5.Name = "panelLvl5";
-            this.panelLvl5.Size = new System.Drawing.Size(35, 26);
+            this.panelLvl5.Size = new System.Drawing.Size(522, 459);
             this.panelLvl5.TabIndex = 16;
             this.panelLvl5.Visible = false;
             // 
@@ -1227,7 +1227,7 @@
             // picLineLvl52
             // 
             this.picLineLvl52.Image = global::Курсовой_проект.Properties.Resources.LineGN_Black;
-            this.picLineLvl52.Location = new System.Drawing.Point(62, 165);
+            this.picLineLvl52.Location = new System.Drawing.Point(62, 164);
             this.picLineLvl52.Name = "picLineLvl52";
             this.picLineLvl52.Size = new System.Drawing.Size(97, 38);
             this.picLineLvl52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1237,7 +1237,7 @@
             // picPowLvl52
             // 
             this.picPowLvl52.Image = global::Курсовой_проект.Properties.Resources.ButtonOff;
-            this.picPowLvl52.Location = new System.Drawing.Point(4, 170);
+            this.picPowLvl52.Location = new System.Drawing.Point(4, 166);
             this.picPowLvl52.Name = "picPowLvl52";
             this.picPowLvl52.Size = new System.Drawing.Size(61, 61);
             this.picPowLvl52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1288,18 +1288,6 @@
             this.picPuLvl51.TabIndex = 1;
             this.picPuLvl51.TabStop = false;
             this.picPuLvl51.Tag = "true";
-            // 
-            // picPowLvl53
-            // 
-            this.picPowLvl53.Image = global::Курсовой_проект.Properties.Resources.ButtonOn;
-            this.picPowLvl53.Location = new System.Drawing.Point(160, 395);
-            this.picPowLvl53.Name = "picPowLvl53";
-            this.picPowLvl53.Size = new System.Drawing.Size(61, 61);
-            this.picPowLvl53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picPowLvl53.TabIndex = 12;
-            this.picPowLvl53.TabStop = false;
-            this.picPowLvl53.Tag = "true";
-            this.picPowLvl53.Click += new System.EventHandler(this.PicPow_Click);
             // 
             // picLineLvl54
             // 
@@ -2815,6 +2803,18 @@
             this.picLineLvl775.TabIndex = 25;
             this.picLineLvl775.TabStop = false;
             // 
+            // picPowLvl53
+            // 
+            this.picPowLvl53.Image = global::Курсовой_проект.Properties.Resources.ButtonOn;
+            this.picPowLvl53.Location = new System.Drawing.Point(147, 396);
+            this.picPowLvl53.Name = "picPowLvl53";
+            this.picPowLvl53.Size = new System.Drawing.Size(61, 61);
+            this.picPowLvl53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picPowLvl53.TabIndex = 22;
+            this.picPowLvl53.TabStop = false;
+            this.picPowLvl53.Tag = "true";
+            this.picPowLvl53.Click += new System.EventHandler(this.Pic_Click);
+            // 
             // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2923,7 +2923,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picPowLvl51)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAndLvl5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPuLvl51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPowLvl53)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLineLvl54)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLineLvl57)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLineLvl58)).EndInit();
@@ -3057,6 +3056,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLineLvl778)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLineLvl776)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLineLvl775)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPowLvl53)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3112,7 +3112,6 @@
         private System.Windows.Forms.PictureBox picPuLvl53;
         private System.Windows.Forms.PictureBox picNotLvl53;
         private System.Windows.Forms.PictureBox picNotLvl52;
-        private System.Windows.Forms.PictureBox picPowLvl53;
         private System.Windows.Forms.PictureBox picNotLvl51;
         private System.Windows.Forms.PictureBox picPuLvl52;
         private System.Windows.Forms.PictureBox picLineLvl52;
@@ -3276,5 +3275,6 @@
         private System.Windows.Forms.PictureBox picLineLvl778;
         private System.Windows.Forms.PictureBox picLineLvl776;
         private System.Windows.Forms.PictureBox picLineLvl775;
+        private System.Windows.Forms.PictureBox picPowLvl53;
     }
 }
