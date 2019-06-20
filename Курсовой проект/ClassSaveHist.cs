@@ -1,19 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace Курсовой_проект
 {
     class ClassSaveHist
     {
-        static internal string Name;
-
+        static public string Name;
         public ClassSaveHist()
         {
 
@@ -22,7 +14,6 @@ namespace Курсовой_проект
         {
             Name = name;
         }
-
         public void ShowForm()
         {
             Form FormHistory = new Form
@@ -33,7 +24,7 @@ namespace Курсовой_проект
                 BackgroundImageLayout = ImageLayout.Stretch,
                 Text = "Выбор режима",
                 MaximizeBox = false,
-                Icon=Properties.Resources.iconGame,
+                Icon = Properties.Resources.iconGame,
             };
 
             PictureBox picPush = new PictureBox();
@@ -42,7 +33,6 @@ namespace Курсовой_проект
             picPush.Image = Properties.Resources.ReadingCat;
             picPush.SizeMode = PictureBoxSizeMode.StretchImage;
             picPush.BackColor = Color.Transparent;
-
 
             Label tit = new Label
             {
@@ -88,9 +78,6 @@ namespace Курсовой_проект
             btn.TextAlign = ContentAlignment.MiddleLeft;
             btn.DialogResult = DialogResult.Abort;
 
-
-            //btn.Click += Btn_Click;
-
             Button btnTrain = new Button();
             btnTrain.Location = new Point(190, 430);
             btnTrain.Text = "Тренировка";
@@ -101,7 +88,6 @@ namespace Курсовой_проект
             btnTrain.DialogResult = DialogResult.OK;
             btnTrain.FlatStyle = FlatStyle.Popup;
 
-
             Button btnPlay = new Button();
             btnPlay.Location = new Point(340, 430);
             btnPlay.Text = "Приступить";
@@ -111,7 +97,6 @@ namespace Курсовой_проект
             btnPlay.Font = new Font("Comic Sans MS", 10);
             btnPlay.DialogResult = DialogResult.Yes;
             btnPlay.FlatStyle = FlatStyle.Popup;
-
 
             FormHistory.Controls.Add(picPush);
             FormHistory.Controls.Add(btn);
