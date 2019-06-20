@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Курсовой_проект
@@ -23,7 +17,17 @@ namespace Курсовой_проект
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-
+            listP[i].Visible = false;
+            i--;
+            listP[i].Visible = true;
+            if (i == 0)
+            {
+                buttonBack.Enabled = false;
+            }
+            if (i < 3)
+            {
+                buttonForward.Enabled = true;
+            }
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
@@ -33,17 +37,25 @@ namespace Курсовой_проект
 
         private void buttonForward_Click(object sender, EventArgs e)
         {
-            for (i = 0; i >= 2; i++)
+            listP[i].Visible = false;
+            i++;
+            listP[i].Visible = true;
+            if (i==3)
             {
-                listP[i].Visible=false;
-                i++;
-                listP[i].Visible = true;
-            }            
+                buttonForward.Enabled = false;
+            }
+            if (i > 0)
+            {
+                buttonBack.Enabled = true;
+            }
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void FormRegulations_Load(object sender, EventArgs e)
         {
-
+            listP.Add(GB1);
+            listP.Add(GB2);
+            listP.Add(GB3);
+            listP.Add(GB4);
         }
     }
 }
